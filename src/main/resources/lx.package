@@ -1,0 +1,15 @@
+{
+  name: "Custom",
+  mediaDir: "Custom",
+  author: "Mark C. Slee",
+  url: "https://github.com/heronarts/LXPackage",
+  
+  build: {
+    name: "@project.name@",
+    version: "@project.version@",
+    groupId: "@project.groupId@",
+    artifactId: "@project.artifactId@",
+    lxVersion: "@lx.version@",
+    buildTimestamp: "@maven.build.timestamp@"
+  }
+}
