@@ -1,0 +1,77 @@
+{
+	"label": "Envelop SF",
+	"tag": "envelop",
+  
+  "parameters": {
+    "columnRadius": {
+      "type": "float",
+      "min": 1,
+      "default": 20,
+      "label": "Column Radius",
+      "description": "Radius of columns (inches)"
+    },
+    "width": {
+      "type": "float",
+      "min": 1,
+      "default": 250.25,
+      "label": "Width",
+      "description": "Width of room (inches)"
+    },
+    "depth": {
+      "type": "float",
+      "min": 1,
+      "default": 498,
+      "label": "Depth",
+      "description": "Depth of room (inches)"
+    }
+  },
+  
+  "ui": {
+    "meshes": [
+      {
+        /* Floor */
+        "type": "uniformFill",
+        "color": "0xff191919",
+        "vertices": [
+          {
+            "type": "cuboid",
+            "x": "-$width*.5",
+            "y": -.01,
+            "z": "-$depth*.5",
+            "width": "$width",
+            "height": -12,
+            "depth": "$depth"
+          }
+        ]
+      },
+      {
+        /* Booth */
+        "type": "uniformFill",
+        "color": "0xff090909",
+        "vertices": [
+          {
+            "type": "cuboid",
+            "x": -36,
+            "z": "$depth*.5 - 36",
+            "width": 72,
+            "height": 40,
+            "depth": 36
+          }
+        ]
+      },
+      {
+        /* Logo */
+        "type": "texture2d",
+        "texture": "Envelop-Logo.png",
+        "vertices": [
+          { "x": -15, "y": 5, "z": "$depth*.5 - 36.1", "u": 0, "v": 1 },
+          { "x": 15, "y": 5, "z": "$depth*.5 - 36.1", "u": 1, "v": 1 },
+          { "x": -15, "y": 35, "z": "$depth*.5 - 36.1", "u": 0, "v": 0 },
+          { "x": -15, "y": 35, "z": "$depth*.5 - 36.1", "u": 0, "v": 0 },
+          { "x": 15, "y": 5, "z": "$depth*.5 - 36.1", "u": 1, "v": 1 },
+          { "x": 15, "y": 35, "z": "$depth*.5 - 36.1", "u": 1, "v": 0 }
+        ]
+      }
+    ]
+  }
+}

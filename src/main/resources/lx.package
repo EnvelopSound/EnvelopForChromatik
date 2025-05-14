@@ -1,8 +1,8 @@
 {
-  name: "Custom",
-  mediaDir: "Custom",
+  name: "Envelop",
+  mediaDir: "Envelop",
   author: "Mark C. Slee",
-  url: "https://github.com/heronarts/LXPackage",
+  url: "https://github.com/EnvelopSound/EnvelopForChromatik",
   
   build: {
     name: "@project.name@",

@@ -1,0 +1,57 @@
+{
+	"label": "Envelop SF",
+	"tag": "column",
+  
+  "parameters": {
+    "columnRadius": {
+      "type": "float",
+      "min": 1,
+      "default": 20,
+      "label": "Column Radius",
+      "description": "Radius of columns (inches)"
+    },
+    "ipAddress": {
+      "type": "string",
+      "default": "192.168.1.101",
+      "label": "IP Addr",
+      "description": "Controller IP address"
+    }
+  },
+  
+  "components": [
+    {
+      "type": "strip",
+      "tag": "rail",
+      "x": "-$columnRadius",
+      "numPoints": 109,
+      "direction": { "y": 1 },
+      "spacing": 1.31233596
+    },
+    {
+      "type": "strip",
+      "tag": "rail",
+      "x": "$columnRadius",
+      "numPoints": 109,
+      "direction": { "y": 1 },
+      "spacing": 1.31233596
+    }
+  ],
+  
+  "output": {
+    "protocol": "ddp",
+    "host": "$ipAddress"
+  },
+  
+  "ui": {
+    "mesh": {
+      "type": "uniformFill",
+      "color": "0xff090909",
+      "vertices": [
+        { "type": "cuboid", "x": -10.5, "y": 9, "z": -8, "width": 21, "depth": 15, "height": 16 },
+        { "type": "cuboid", "x": -10.5, "y": 72, "z": -8, "width": 21, "depth": 15, "height": 16 },
+        { "type": "cuboid", "x": -10.5, "y": 125, "z": -8, "width": 21, "depth": 15, "height": 16 }
+      ]
+    }
+
+  }
+}

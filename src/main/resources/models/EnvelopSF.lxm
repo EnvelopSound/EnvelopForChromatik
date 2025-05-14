@@ -1,0 +1,323 @@
+{
+  "version": "1.1.1-SNAPSHOT",
+  "timestamp": 1747236796351,
+  "fixtures": [
+    {
+      "jsonFixtureType": "Envelop/EnvelopSF",
+      "jsonParameters": {
+        "columnRadius": 20.0,
+        "width": 250.25,
+        "depth": 498.0
+      },
+      "id": 260502,
+      "class": "heronarts.lx.structure.JsonFixture",
+      "internal": {
+        "modulationColor": 0,
+        "modulationControlsExpanded": true,
+        "modulationsExpanded": true
+      },
+      "parameters": {
+        "label": "Envelop SF",
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0,
+        "roll": 0.0,
+        "scale": 1.0,
+        "selected": true,
+        "deactivate": false,
+        "enabled": false,
+        "brightness": 1.0,
+        "identify": false,
+        "mute": false,
+        "solo": false,
+        "tags": "",
+        "fixtureType": "Envelop/EnvelopSF"
+      },
+      "children": {}
+    },
+    {
+      "jsonFixtureType": "Envelop/EnvelopSF-Column",
+      "jsonParameters": {
+        "columnRadius": 20.0,
+        "ipAddress": "192.168.1.201"
+      },
+      "id": 260408,
+      "class": "heronarts.lx.structure.JsonFixture",
+      "internal": {
+        "modulationColor": 0,
+        "modulationControlsExpanded": true,
+        "modulationsExpanded": true
+      },
+      "parameters": {
+        "label": "Column 1",
+        "x": 63.375,
+        "y": 0.0,
+        "z": -157.0,
+        "yaw": -22.0,
+        "pitch": 0.0,
+        "roll": 0.0,
+        "scale": 1.0,
+        "selected": true,
+        "deactivate": false,
+        "enabled": true,
+        "brightness": 1.0,
+        "identify": false,
+        "mute": false,
+        "solo": false,
+        "tags": "",
+        "fixtureType": "Envelop/EnvelopSF-Column"
+      },
+      "children": {}
+    },
+    {
+      "jsonFixtureType": "Envelop/EnvelopSF-Column",
+      "jsonParameters": {
+        "columnRadius": 20.0,
+        "ipAddress": "192.168.1.202"
+      },
+      "id": 260411,
+      "class": "heronarts.lx.structure.JsonFixture",
+      "internal": {
+        "modulationColor": 0,
+        "modulationControlsExpanded": true,
+        "modulationsExpanded": true
+      },
+      "parameters": {
+        "label": "Column 2",
+        "x": 104.375,
+        "y": 0.0,
+        "z": -58.25,
+        "yaw": 119.0,
+        "pitch": 0.0,
+        "roll": 0.0,
+        "scale": 1.0,
+        "selected": true,
+        "deactivate": false,
+        "enabled": true,
+        "brightness": 1.0,
+        "identify": false,
+        "mute": false,
+        "solo": false,
+        "tags": "",
+        "fixtureType": "Envelop/EnvelopSF-Column"
+      },
+      "children": {}
+    },
+    {
+      "jsonFixtureType": "Envelop/EnvelopSF-Column",
+      "jsonParameters": {
+        "columnRadius": 20.0,
+        "ipAddress": "192.168.1.203"
+      },
+      "id": 260414,
+      "class": "heronarts.lx.structure.JsonFixture",
+      "internal": {
+        "modulationColor": 0,
+        "modulationControlsExpanded": true,
+        "modulationsExpanded": true
+      },
+      "parameters": {
+        "label": "Column 3",
+        "x": 104.375,
+        "y": 0.0,
+        "z": 58.25,
+        "yaw": -119.0,
+        "pitch": 0.0,
+        "roll": 0.0,
+        "scale": 1.0,
+        "selected": true,
+        "deactivate": false,
+        "enabled": true,
+        "brightness": 1.0,
+        "identify": false,
+        "mute": false,
+        "solo": false,
+        "tags": "",
+        "fixtureType": "Envelop/EnvelopSF-Column"
+      },
+      "children": {}
+    },
+    {
+      "jsonFixtureType": "Envelop/EnvelopSF-Column",
+      "jsonParameters": {
+        "columnRadius": 20.0,
+        "ipAddress": "192.168.1.204"
+      },
+      "id": 260417,
+      "class": "heronarts.lx.structure.JsonFixture",
+      "internal": {
+        "modulationColor": 0,
+        "modulationControlsExpanded": true,
+        "modulationsExpanded": true
+      },
+      "parameters": {
+        "label": "Column 4",
+        "x": 63.375,
+        "y": 0.0,
+        "z": 157.0,
+        "yaw": -158.0,
+        "pitch": 0.0,
+        "roll": 0.0,
+        "scale": 1.0,
+        "selected": true,
+        "deactivate": false,
+        "enabled": true,
+        "brightness": 1.0,
+        "identify": false,
+        "mute": false,
+        "solo": false,
+        "tags": "",
+        "fixtureType": "Envelop/EnvelopSF-Column"
+      },
+      "children": {}
+    },
+    {
+      "jsonFixtureType": "Envelop/EnvelopSF-Column",
+      "jsonParameters": {
+        "columnRadius": 20.0,
+        "ipAddress": "192.168.1.205"
+      },
+      "id": 260420,
+      "class": "heronarts.lx.structure.JsonFixture",
+      "internal": {
+        "modulationColor": 0,
+        "modulationControlsExpanded": true,
+        "modulationsExpanded": true
+      },
+      "parameters": {
+        "label": "Column 5",
+        "x": -63.375,
+        "y": 0.0,
+        "z": 157.0,
+        "yaw": -202.0,
+        "pitch": 0.0,
+        "roll": 0.0,
+        "scale": 1.0,
+        "selected": true,
+        "deactivate": false,
+        "enabled": true,
+        "brightness": 1.0,
+        "identify": false,
+        "mute": false,
+        "solo": false,
+        "tags": "",
+        "fixtureType": "Envelop/EnvelopSF-Column"
+      },
+      "children": {}
+    },
+    {
+      "jsonFixtureType": "Envelop/EnvelopSF-Column",
+      "jsonParameters": {
+        "columnRadius": 20.0,
+        "ipAddress": "192.168.1.206"
+      },
+      "id": 260423,
+      "class": "heronarts.lx.structure.JsonFixture",
+      "internal": {
+        "modulationColor": 0,
+        "modulationControlsExpanded": true,
+        "modulationsExpanded": true
+      },
+      "parameters": {
+        "label": "Column 6",
+        "x": -104.375,
+        "y": 0.0,
+        "z": 58.25,
+        "yaw": 119.0,
+        "pitch": 0.0,
+        "roll": 0.0,
+        "scale": 1.0,
+        "selected": true,
+        "deactivate": false,
+        "enabled": true,
+        "brightness": 1.0,
+        "identify": false,
+        "mute": false,
+        "solo": false,
+        "tags": "",
+        "fixtureType": "Envelop/EnvelopSF-Column"
+      },
+      "children": {}
+    },
+    {
+      "jsonFixtureType": "Envelop/EnvelopSF-Column",
+      "jsonParameters": {
+        "columnRadius": 20.0,
+        "ipAddress": "192.168.1.207"
+      },
+      "id": 260426,
+      "class": "heronarts.lx.structure.JsonFixture",
+      "internal": {
+        "modulationColor": 0,
+        "modulationControlsExpanded": true,
+        "modulationsExpanded": true
+      },
+      "parameters": {
+        "label": "Column 7",
+        "x": -104.375,
+        "y": 0.0,
+        "z": -58.25,
+        "yaw": 60.0,
+        "pitch": 0.0,
+        "roll": 0.0,
+        "scale": 1.0,
+        "selected": true,
+        "deactivate": false,
+        "enabled": true,
+        "brightness": 1.0,
+        "identify": false,
+        "mute": false,
+        "solo": false,
+        "tags": "",
+        "fixtureType": "Envelop/EnvelopSF-Column"
+      },
+      "children": {}
+    },
+    {
+      "jsonFixtureType": "Envelop/EnvelopSF-Column",
+      "jsonParameters": {
+        "columnRadius": 20.0,
+        "ipAddress": "192.168.1.208"
+      },
+      "id": 260429,
+      "class": "heronarts.lx.structure.JsonFixture",
+      "internal": {
+        "modulationColor": 0,
+        "modulationControlsExpanded": true,
+        "modulationsExpanded": true
+      },
+      "parameters": {
+        "label": "Column 8",
+        "x": -63.375,
+        "y": 0.0,
+        "z": -157.0,
+        "yaw": 23.0,
+        "pitch": 0.0,
+        "roll": 0.0,
+        "scale": 1.0,
+        "selected": true,
+        "deactivate": false,
+        "enabled": true,
+        "brightness": 1.0,
+        "identify": false,
+        "mute": false,
+        "solo": false,
+        "tags": "",
+        "fixtureType": "Envelop/EnvelopSF-Column"
+      },
+      "children": {}
+    }
+  ],
+  "normalization": {
+    "normalizationMode": 0,
+    "normalizationMode/name": "AUTOMATIC",
+    "normalizationX": 0.0,
+    "normalizationY": 0.0,
+    "normalizationZ": 0.0,
+    "normalizationWidth": 1000.0,
+    "normalizationHeight": 1000.0,
+    "normalizationDepth": 1000.0
+  }
+}
