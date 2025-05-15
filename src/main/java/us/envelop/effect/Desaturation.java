@@ -27,7 +27,7 @@ import heronarts.lx.color.LXColor;
 import heronarts.lx.parameter.CompoundParameter;
 import heronarts.lx.parameter.LXParameter;
 
-@LXCategory("Envelop/Color")
+@LXCategory("Envelop")
 public class Desaturation extends EnvelopEffect {
 
   private final CompoundParameter attack =

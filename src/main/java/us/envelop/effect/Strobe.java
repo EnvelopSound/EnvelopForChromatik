@@ -32,7 +32,7 @@ import heronarts.lx.parameter.EnumParameter;
 import heronarts.lx.parameter.FunctionalParameter;
 import heronarts.lx.utils.LXUtils;
 
-@LXCategory("Envelop/Form")
+@LXCategory("Envelop")
 public class Strobe extends LXEffect {
 
   public enum Waveshape {

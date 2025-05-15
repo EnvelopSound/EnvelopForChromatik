@@ -125,7 +125,7 @@ public class Noise extends EnvelopPattern {
     float yo = yOffset.getValuef();
     float zo = zOffset.getValuef();
     for (LXPoint p :  model.points) {
-      float b = ff + rf * LXUtils.noise(sf*p.x + xo - xAccum.accum, sf*p.y + yo - yAccum.accum, sf*p.z + zo - zAccum.accum);
+      float b = ff + rf * noise(sf*p.x + xo - xAccum.accum, sf*p.y + yo - yAccum.accum, sf*p.z + zo - zAccum.accum);
       colors[p.index] = LXColor.gray(LXUtils.constrainf(b*100, 0, 100));
     }
   }

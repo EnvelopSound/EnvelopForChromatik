@@ -35,7 +35,7 @@ import heronarts.lx.parameter.CompoundParameter;
 import heronarts.lx.parameter.FunctionalParameter;
 import heronarts.lx.utils.LXUtils;
 
-@LXCategory("Envelope/MIDI")
+@LXCategory("Envelop/MIDI")
 public class Blips extends EnvelopPattern {
 
   public final CompoundParameter speed = new CompoundParameter("Speed", 500, 4000, 250);

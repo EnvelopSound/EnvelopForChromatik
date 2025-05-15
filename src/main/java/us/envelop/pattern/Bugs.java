@@ -22,6 +22,7 @@
 package us.envelop.pattern;
 
 import heronarts.lx.LX;
+import heronarts.lx.LXCategory;
 import heronarts.lx.LXLayer;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXModel;
@@ -32,6 +33,7 @@ import heronarts.lx.parameter.CompoundParameter;
 import heronarts.lx.parameter.FunctionalParameter;
 import heronarts.lx.utils.LXUtils;
 
+@LXCategory("Envelop/Texture")
 public class Bugs extends EnvelopPattern {
 
   public final CompoundParameter speed = new CompoundParameter("Speed", 10, 20, 1)

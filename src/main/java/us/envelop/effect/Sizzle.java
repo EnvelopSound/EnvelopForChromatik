@@ -23,15 +23,13 @@ package us.envelop.effect;
 
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.ModelBuffer;
 import heronarts.lx.color.LXColor;
-import heronarts.lx.effect.LXEffect;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.CompoundParameter;
 import heronarts.lx.utils.LXUtils;
 
-@LXCategory("Envelop/Texture")
-public class Sizzle extends LXEffect {
+@LXCategory("Envelop")
+public class Sizzle extends EnvelopEffect {
 
   public final CompoundParameter amount =
     new CompoundParameter("Amount", .5)
@@ -41,7 +39,9 @@ public class Sizzle extends LXEffect {
     new CompoundParameter("Speed", .5)
     .setDescription("Speed of the effect");
 
-  private final ModelBuffer modelBuffer = new ModelBuffer(lx);
+  public final CompoundParameter peak =
+    new CompoundParameter("Peak", 255, 255, 500)
+    .setDescription("Peak of the effect");
 
   private float base = 0;
 
@@ -49,22 +49,21 @@ public class Sizzle extends LXEffect {
     super(lx);
     addParameter("amount", this.amount);
     addParameter("speed", this.speed);
+    addParameter("peak", this.peak);
   }
 
   @Override
   public void run(double deltaMs, double amount) {
-    int[] buffer = this.modelBuffer.getArray();
-
     double amt = amount * this.amount.getValue();
+    float peak = this.peak.getValuef();
 
     if (amt > 0) {
       base += deltaMs * .01 * speed.getValuef();
-      for (int i = 0; i < buffer.length; ++i) {
-        int val = (int) LXUtils.minf(0xff, 500 * LXUtils.noise(i, base, 0));
-        buffer[i] = 0xff000000 | val | (val << 8) | (val << 16);
-      }
+      int mask = LXColor.blendMask(amt);
       for (LXPoint p : model.points) {
-        colors[p.index] = LXColor.multiply(this.colors[p.index], buffer[p.index], amt);
+        int val = LXUtils.min(0xff, (int) (peak * noise(p.index, base)));
+        int sizz = LXColor.rgb(val, val, val);
+        colors[p.index] = LXColor.multiply(this.colors[p.index], sizz, mask);
       }
     }
   }

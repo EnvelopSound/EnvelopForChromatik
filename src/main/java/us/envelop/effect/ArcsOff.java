@@ -22,10 +22,12 @@
 package us.envelop.effect;
 
 import heronarts.lx.LX;
+import heronarts.lx.LXCategory;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.effect.LXEffect;
 import heronarts.lx.model.LXModel;
 
+@LXCategory("Envelop")
 public class ArcsOff extends LXEffect {
   public ArcsOff(LX lx) {
     super(lx);

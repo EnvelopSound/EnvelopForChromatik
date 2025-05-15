@@ -21,8 +21,25 @@
 
 package us.envelop;
 
+import heronarts.lx.utils.LXUtils;
+
 public interface EnvelopConstants {
   public final static int NUM_COLUMNS = 8;
   public final static float INCHES = 1;
   public final static float FEET = 12*INCHES;
+
+  // Compatibility with legacy P3 noise
+  public default float noise(float x) {
+    return .5f + .5f * LXUtils.noise(x, 0, 0);
+  }
+
+  // Compatibility with legacy P3 noise
+  public default float noise(float x, float y) {
+    return .5f + .5f * LXUtils.noise(x, y, 0);
+  }
+
+  // Compatibility with legacy P3 noise
+  public default float noise(float x, float y, float z) {
+    return .5f + .5f * LXUtils.noise(x, y, z);
+  }
 }

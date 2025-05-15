@@ -24,13 +24,11 @@ package us.envelop.effect;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.color.LXColor;
-import heronarts.lx.effect.LXEffect;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.BoundedParameter;
-import heronarts.lx.utils.LXUtils;
 
-@LXCategory("Color")
-public class LSD extends LXEffect {
+@LXCategory("Envelop")
+public class LSD extends EnvelopEffect {
 
   public final BoundedParameter scale = new BoundedParameter("Scale", 10, 5, 40);
   public final BoundedParameter speed = new BoundedParameter("Speed", 4, 1, 6);
@@ -64,8 +62,8 @@ public class LSD extends LXEffect {
     float rf = range.getValuef();
     for (LXPoint p :  model.points) {
       float bright = LXColor.b(colors[p.index]);
-      float h = rf * LXUtils.noise(sf*p.x, sf*p.y, sf*p.z + accum);
-      int c2 = LX.hsb(h, 100, bright);
+      float h = rf * noise(sf*p.x, sf*p.y, sf*p.z + accum);
+      int c2 = LX.hsb(360f*h, 100, bright);
       if (amount < 1) {
         colors[p.index] = LXColor.lerp(colors[p.index], c2, amount);
       } else {
