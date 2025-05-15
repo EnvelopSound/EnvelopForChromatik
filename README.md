@@ -1,4 +1,16 @@
-Envelop for Chromatik is an open-source content package for [Chromatik](https://chromatik.co/), providing lighting models of the Envelop venues, animation content, and legacy software support.
+# Envelop for Chromatik
+
+**Envelop for Chromatik** is an open-source content package for [Chromatik](https://chromatik.co/). It provides lighting models of the Envelop venues, animation content, and legacy software support.
+
+## Installation
+
+_NOTE: Envelop for Chromatik is currently under development. It relies upon some features that have not yet been released in Chromatik 1.1.0._
+
+The development package can be built and installed with Maven.
+
+```
+$ mvn install
+```
 
 ## Licensing
 
