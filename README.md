@@ -11,6 +11,8 @@ _NOTE: Envelop for Chromatik is currently under development. It relies upon some
 
 Once Chromatik is up and running, drag and drop the downloaded file `envelop-0.0.1-SNAPSHOT.jar` onto the Chromatik window, follow the prompt to install the package.
 
+Follow the instructions in [Migration Guide &rarr;](MIGRATION.md)
+
 ### Developer Install
 
 The development package can be built and installed manually with Maven.
