@@ -6,6 +6,8 @@
 
 _NOTE: Envelop for Chromatik is currently under development. It relies upon some features that have not yet been released in Chromatik 1.1.0._
 
+Install the latest [Chromatik pre-release &rarr;](https://github.com/heronarts/Chromatik/releases/tag/1.1.1-SNAPSHOT-2025-06-11)
+
 The development package can be built and installed with Maven.
 
 ```
