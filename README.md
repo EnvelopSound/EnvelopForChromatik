@@ -6,9 +6,14 @@
 
 _NOTE: Envelop for Chromatik is currently under development. It relies upon some features that have not yet been released in Chromatik 1.1.0._
 
-Install the latest [Chromatik pre-release &rarr;](https://github.com/heronarts/Chromatik/releases/tag/1.1.1-SNAPSHOT-2025-06-11)
+- Install the latest [Chromatik pre-release &rarr;](https://github.com/heronarts/Chromatik/releases/tag/1.1.1-SNAPSHOT-2025-06-11)
+- Download the [Envelop for Chromatik content package &rarr;](https://github.com/EnvelopSound/EnvelopForChromatik/releases/download/0.0.1-SNAPSHOT-2025-06-12/envelop-0.0.1-SNAPSHOT.jar)
 
-The development package can be built and installed with Maven.
+Once Chromatik is up and running, drag and drop the downloaded file `envelop-0.0.1-SNAPSHOT.jar` onto the Chromatik window, follow the prompt to install the package.
+
+### Developer Install
+
+The development package can be built and installed manually with Maven.
 
 ```
 $ mvn install
