@@ -23,12 +23,14 @@ package us.envelop.pattern;
 
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
+import heronarts.lx.LXComponentName;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.modulator.SinLFO;
 import heronarts.lx.utils.LXUtils;
 
 @LXCategory("Envelop/Texture")
+@LXComponentName("Legacy Sparkle")
 public class Sparkle extends EnvelopPattern {
 
   public final SinLFO[] sparkles = new SinLFO[60];

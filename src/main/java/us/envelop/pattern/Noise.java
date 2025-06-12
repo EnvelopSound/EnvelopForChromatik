@@ -23,6 +23,7 @@ package us.envelop.pattern;
 
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
+import heronarts.lx.LXComponentName;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.modulator.DampedParameter;
@@ -31,6 +32,7 @@ import heronarts.lx.parameter.LXParameter;
 import heronarts.lx.utils.LXUtils;
 
 @LXCategory("Envelop/Texture")
+@LXComponentName("Perlin")
 public class Noise extends EnvelopPattern {
 
   public final CompoundParameter scale =

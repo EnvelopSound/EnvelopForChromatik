@@ -23,6 +23,7 @@ package us.envelop.effect;
 
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
+import heronarts.lx.LXComponentName;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.effect.LXEffect;
 import heronarts.lx.modulator.LXWaveshape;
@@ -33,6 +34,7 @@ import heronarts.lx.parameter.FunctionalParameter;
 import heronarts.lx.utils.LXUtils;
 
 @LXCategory("Envelop")
+@LXComponentName("Legacy Strobe")
 public class Strobe extends LXEffect {
 
   public enum Waveshape {
